@@ -1,5 +1,6 @@
 package com.bbva.cgmp.co.jsprk.diat03np0l01.v00;
 
+import com.bbva.cgmp.co.jsprk.diat03np0l01.v00.model.Constants;
 import com.bbva.lrba.builder.spark.domain.SourcesList;
 import com.bbva.lrba.builder.spark.domain.TargetsList;
 import com.bbva.lrba.spark.domain.datasource.Source;
@@ -29,8 +30,7 @@ class JobDiat03np0l01BuilderTest {
 
         final Source source = sourcesList.getSources().get(0);
         assertNotNull(source);
-        assertEquals("sourceAlias1", source.getAlias());
-        assertEquals("input1.csv", source.getPhysicalName());
+        assertEquals(Constants.ORACLE_ALIAS, source.getAlias());
     }
 
     @Test
@@ -39,13 +39,6 @@ class JobDiat03np0l01BuilderTest {
         final TransformConfig transformConfig = this.jobDiat03np0l01Builder.registerTransform();
         assertNotNull(transformConfig);
         assertNotNull(transformConfig.getTransform());
-        //IF YOU WANT SQL TRANSFORM
-        //final TransformConfig transformConfig = this.jobDiat03np0l01Builder.registerTransform();
-        //assertNotNull(transformConfig);
-        //assertNotNull(transformConfig.getTransformSqls());
-        //IF YOU DO NOT WANT TRANSFORM
-        //final TransformConfig transformConfig = this.jobDiat03np0l01Builder.registerTransform();
-        //assertNull(transformConfig);
     }
 
     @Test
@@ -57,8 +50,8 @@ class JobDiat03np0l01BuilderTest {
 
         final Target target = targetsList.getTargets().get(0);
         assertNotNull(target);
-        assertEquals("targetAlias1", target.getAlias());
-        assertEquals("output/output.csv", target.getPhysicalName());
+        assertEquals(Constants.OUTPUT_ALIAS, target.getAlias());
+        assertEquals(Constants.DEFAULT_PHYSICAL_TARGET_NAME, target.getPhysicalName());
     }
 
 }
