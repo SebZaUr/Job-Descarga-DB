@@ -30,10 +30,6 @@ public class JobDiat03np0l01Builder extends RegisterSparkBuilder {
     public TransformConfig registerTransform() {
         //IF YOU WANT TRANSFORM CLASS
         return TransformConfig.TransformClass.builder().transform(new Transformer()).build();
-        //IF YOU WANT SQL TRANSFORM
-        //return TransformConfig.SqlStatements.builder().addSql("targetAlias1", "SELECT CAMPO1 FROM sourceAlias1").build();
-        //IF YOU DO NOT WANT TRANSFORM
-        //return null;
     }
 
     @Override
