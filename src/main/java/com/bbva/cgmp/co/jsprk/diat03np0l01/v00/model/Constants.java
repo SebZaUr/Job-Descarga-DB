@@ -20,6 +20,7 @@ public class Constants {
     public static final String CUSTOMER_ID = "CUSTOMER_ID";
     public static final String CUST_REMOTE_STATUS_MARK_TYPE = "CUST_REMOTE_STATUS_MARK_TYPE";
     public static final String USER_AUDIT_ID = "USER_AUDIT_ID";
+    public static final String PRUENA = "SDA"
     private Constants() {
     }
 }
