@@ -1,0 +1,13 @@
+{
+    "name": "CGMP",
+    "services": [
+        {
+            "name": "CGMP.BATCH",
+            "datasourceType": "oracle",
+            "physical": "physical_oracle",
+            "service": "service_BATCH",
+            "user": "system",
+            "password": "Oracle1234"
+        }
+    ]
+}

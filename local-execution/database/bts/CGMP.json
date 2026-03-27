@@ -1,0 +1,13 @@
+{
+    "name": "CGMP",
+    "services": [
+        {
+            "name": "CGMP.BATCH",
+            "datasourceType": "file",
+            "physical": "physical_file",
+            "service": "service_BATCH",
+            "user": "",
+            "password": ""
+        }
+    ]
+}

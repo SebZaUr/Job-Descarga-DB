@@ -33,12 +33,10 @@ public class  JobDiat03np0l01Builder extends RegisterSparkBuilder {
     @Override
     public TargetsList registerTargets() {
         return TargetsList.builder()
-                .add(Target.File.Csv.builder()
+                .add(Target.File.Parquet.builder()
                         .alias(Constants.OUTPUT_ALIAS)
                         .physicalName(Utils.getPropertyPhysicalName())
                         .serviceName(Constants.SERVICE_NAME_OUTPUT)
-                        .header(true)
-                        .delimiter(";")
                         .build())
                 .build();
     }
