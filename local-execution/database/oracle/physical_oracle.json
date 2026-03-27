@@ -1,0 +1,9 @@
+{
+    "name": "physical_oracle",
+    "services": [
+        {
+            "name": "service_BATCH",
+            "url": "127.0.0.1:1521/free"
+        }
+    ]
+}

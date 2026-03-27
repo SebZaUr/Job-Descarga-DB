@@ -1,0 +1,9 @@
+{
+    "name": "physical_file",
+    "services": [
+        {
+            "name": "service_BATCH",
+            "url": "local-execution/files/"
+        }
+    ]
+}
